@@ -68,12 +68,24 @@ ul {
   &.-intro {
     padding-bottom: 3.5rem;
     padding-top: 3.5rem;
+
+    @include desktop-up {
+      padding-top: 1.75rem;
+    }
   }
 
   &.-experience {
     color: $nord6;
     font-size: 2rem;
     padding-top: 2rem;
+
+    @include tablet-portrait-up {
+      font-size: 4rem;
+    }
+
+    @include desktop-up {
+      font-size: 5rem;
+    }
   }
 
   &.-projects {
@@ -82,6 +94,10 @@ ul {
 
   &.-contact {
     padding-bottom: 5rem;
+  }
+
+  @include tablet-portrait-up {
+    font-size: 4rem;
   }
 }
 .section__content {
@@ -94,10 +110,29 @@ ul {
     box-shadow: 0 5px 7px rgba(184, 194, 215, 0.1), 0 4px 4px rgba(184, 194, 215, 0.25);
     margin: 0 1.5rem 3rem;
     padding: 1.5rem 2rem;
+
+    @include tablet-portrait-up {
+      max-width: 50%;
+      margin: 0 auto;
+      padding: 1.5rem 3rem;
+    }
   }
 
   &.-experience {
     padding-top: 5rem;
+
+    @include tablet-portrait-up {
+      width: 65%;
+      margin: 0 auto;
+    }
+  }
+
+  @include tablet-portrait-up {
+    &.-contact {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 .wave-divider {
@@ -128,6 +163,12 @@ ul {
   font-weight: 500;
 
   padding: 10rem 3rem 0;
+
+  @include desktop-up {
+    font-size: 2rem;
+    padding-left: 9rem;
+    padding-top: 8rem;
+  }
 }
 .hero__subtitle-highlight {
   color: $nord7;
@@ -140,6 +181,10 @@ ul {
 
   height: 2rem;
   width: 0.75rem;
+
+  @include desktop-up {
+    height: 2.25rem;
+  }
 }
 
 @keyframes blinking {
@@ -158,26 +203,51 @@ ul {
 
 .dev-icon-wrapper {
   margin-bottom: 3.5rem;
+
+  @include tablet-landscape-up {
+    margin: 3.5rem 0;
+  }
 }
 .dev-icon {
   border-radius: 50%;
   max-width: 150px;
+}
+.intro__text {
+  @include tablet-portrait-up {
+    font-size: 1.35rem;
+    margin: 7rem auto 0;
+    width: 50%;
+  }
 }
 
 
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 0;
+  grid-column-gap: 20px;
+  grid-row-gap: 0;
+
+  @include tablet-portrait-up {
+    grid-column-gap: 26px;
+  }
 }
 .skills__group {
-  padding-right: .5rem;
+  overflow: hidden;
 }
 .skills__groupName {
   font-size: .88rem;
   font-family: 'Montserrat', "Segoe UI", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
+
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+  @include tablet-landscape-up {
+    font-size: 1.5rem;
+  }
 }
 .skills__list {
   li {
@@ -185,6 +255,15 @@ ul {
     font-size: .75rem;
     font-weight: 500;
     padding-left: .5rem;
+
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    @include tablet-landscape-up {
+      font-size: 1rem;
+    }
   }
 }
 
@@ -265,6 +344,14 @@ ul {
     color: $nord10;
     margin: 0;
   }
+
+  @include tablet-portrait-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 
 .contact__email {
@@ -276,5 +363,10 @@ ul {
 
   a {
     color: $nord8;
+  }
+
+  @include tablet-portrait-up {
+    font-size: 4rem;
+    line-height: 58px;
   }
 }
