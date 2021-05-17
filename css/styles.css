@@ -96,10 +96,9 @@ ul {
   text-align: center; }
   .section__title.-intro {
     padding: 3.5rem 0; }
-  .section__title.-skills {
-    padding: 2rem 0; }
   .section__title.-experience {
     color: #eceff4;
+    font-size: 2rem;
     padding-top: 2rem; }
   .section__title.-projects {
     padding-top: 2rem; }
@@ -107,7 +106,7 @@ ul {
     padding-bottom: 5rem; }
 
 .section__content {
-  padding: 0 5.25rem; }
+  padding: 0 3.25rem; }
   .section__content.-skills {
     background: #FFFFFF;
     border-radius: 5px;
@@ -163,33 +162,22 @@ ul {
   border-radius: 50%;
   max-width: 150px; }
 
-.skills-row {
-  align-items: flex-start;
-  display: flex; }
-
-.skills__group.-languages {
-  border-right: 1px solid #e5e9f0;
-  padding-bottom: 2.5rem;
-  width: 50%; }
-
-.skills__group.-frameworks, .skills__group.-tools {
-  padding-left: 2rem; }
-
-.skills__group.-tools {
-  border-left: 1px solid #e5e9f0; }
-
-.skills__group.-databases {
-  width: 50%; }
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0; }
 
 .skills__groupName {
+  font-size: .88rem;
   font-family: 'Montserrat', "Segoe UI", sans-serif;
   font-weight: 700;
   text-transform: uppercase; }
 
 .skills__list li {
   color: #81a1c1;
+  font-size: .75rem;
   font-weight: 500;
-  padding-left: 1rem; }
+  padding-left: .5rem; }
 
 .experience__item {
   align-items: flex-start;
@@ -241,7 +229,8 @@ ul {
   text-align: center; }
   .project-thumbnail img {
     display: inline-block;
-    border-radius: 4px; }
+    border-radius: 4px;
+    max-width: 100%; }
 
 .project-title {
   font-size: 1.75rem;
@@ -256,7 +245,7 @@ ul {
     margin: 0; }
 
 .contact__email {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 3rem;
   line-height: 44px; }

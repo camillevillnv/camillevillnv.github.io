@@ -69,12 +69,9 @@ ul {
     padding: 3.5rem 0;
   }
 
-  &.-skills {
-    padding: 2rem 0;
-  }
-
   &.-experience {
     color: $nord6;
+    font-size: 2rem;
     padding-top: 2rem;
   }
 
@@ -87,7 +84,7 @@ ul {
   }
 }
 .section__content {
-  padding: 0 5.25rem;
+  padding: 0 3.25rem;
 
   &.-skills {
     background: #FFFFFF;
@@ -166,29 +163,13 @@ ul {
 }
 
 
-.skills-row {
-  align-items: flex-start;
-  display: flex;
-}
-.skills__group {
-  &.-languages {
-    border-right: 1px solid $nord5;
-    padding-bottom: 2.5rem;
-    width: 50%;
-  }
-  &.-frameworks,
-  &.-tools {
-    padding-left: 2rem;
-  }
-
-  &.-tools {
-    border-left: 1px solid $nord5;
-  }
-  &.-databases {
-    width: 50%;
-  }
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0;
 }
 .skills__groupName {
+  font-size: .88rem;
   font-family: 'Montserrat', "Segoe UI", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -196,8 +177,9 @@ ul {
 .skills__list {
   li {
     color: $nord9;
+    font-size: .75rem;
     font-weight: 500;
-    padding-left: 1rem;
+    padding-left: .5rem;
   }
 }
 
@@ -262,6 +244,7 @@ ul {
     display: inline-block;
 
     border-radius: 4px;
+    max-width: 100%;
   }
 }
 .project-title {
@@ -280,7 +263,7 @@ ul {
 }
 
 .contact__email {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 3rem;
 
