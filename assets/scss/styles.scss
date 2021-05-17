@@ -56,6 +56,13 @@ ul {
   pointer-events: none;
   user-select: none;
   text-align: center;
+
+  svg {
+    @include desktop-up {
+      height: 130px;
+      width: 130px;
+    }
+  }
 }
 .section__title {
   font-size: 2.75rem;
