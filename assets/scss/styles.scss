@@ -53,8 +53,9 @@ ul {
   }
 }
 .section__icon {
+  pointer-events: none;
+  user-select: none;
   text-align: center;
-
 }
 .section__title {
   font-size: 2.75rem;
@@ -118,7 +119,7 @@ ul {
     }
 
     @include desktop-up {
-      max-width: 30%;
+      max-width: 45%;
       padding: 2.5rem 5rem;
     }
   }
@@ -217,6 +218,8 @@ ul {
 .dev-icon {
   border-radius: 50%;
   max-width: 150px;
+  pointer-events: none;
+  user-select: none;
 }
 .intro__text {
   @include tablet-portrait-up {
