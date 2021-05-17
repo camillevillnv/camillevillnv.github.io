@@ -69,22 +69,21 @@ ul {
   padding-inline-start: 0;
   padding-left: 0; }
 
-.section.-hero {
-  background: #2e3440; }
-
-.section.-skills {
-  background: #e5e9f0;
-  padding: 3.8rem 0 0; }
-
-.section.-experience {
-  background: #2e3440; }
-
-.section.-projects {
-  background: #d8dee9; }
-
-.section.-contact {
-  padding-top: 2.5rem;
-  padding-bottom: 5rem; }
+.section {
+  position: relative;
+  overflow: hidden; }
+  .section.-hero {
+    background: #2e3440; }
+  .section.-skills {
+    background: #e5e9f0;
+    padding: 3.8rem 0 0; }
+  .section.-experience {
+    background: #2e3440; }
+  .section.-projects {
+    background: #d8dee9; }
+  .section.-contact {
+    padding-top: 2.5rem;
+    padding-bottom: 5rem; }
 
 .section__icon {
   text-align: center; }
@@ -119,7 +118,13 @@ ul {
     padding-top: 5rem; }
 
 .wave-divider {
-  display: block; }
+  display: block;
+  overflow: hidden;
+  vertical-align: middle;
+  width: 100%;
+  background-color: transparent;
+  pointer-events: none;
+  user-select: none; }
 
 .hero__content {
   color: #eceff4;

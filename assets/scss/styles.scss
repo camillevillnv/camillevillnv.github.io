@@ -27,6 +27,9 @@ ul {
 }
 
 .section {
+  position: relative;
+  overflow: hidden;
+
   &.-hero {
     background: $nord0;
   }
@@ -100,6 +103,14 @@ ul {
 }
 .wave-divider {
   display: block;
+  overflow: hidden;
+  vertical-align: middle;
+
+  width: 100%;
+
+  background-color: transparent;
+  pointer-events: none;
+  user-select: none;
 }
 
 .hero__content {
