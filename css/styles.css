@@ -107,6 +107,7 @@ ul {
     padding-bottom: 5rem; }
 
 .section__content {
+  overflow: hidden;
   padding: 0 3.25rem; }
   .section__content.-skills {
     background: #FFFFFF;
@@ -167,6 +168,9 @@ ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 0; }
+
+.skills__group {
+  padding-right: .5rem; }
 
 .skills__groupName {
   font-size: .88rem;
