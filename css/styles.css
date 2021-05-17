@@ -1,0 +1,255 @@
+.font-bold {
+  font-weight: 700; }
+
+.font-semibold {
+  font-weight: 600; }
+
+.textColor-brown {
+  color: #BA4706; }
+
+.textColor-primary {
+  color: #434c5e; }
+
+.textColor-nord12 {
+  color: #d08770; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.flex {
+  display: flex; }
+
+.flex-1 {
+  flex: 1 1 0; }
+
+.flex-col {
+  flex-direction: column; }
+
+.justify-center {
+  justify-content: center; }
+
+.items-center {
+  align-items: center; }
+
+.mb-5 {
+  margin-bottom: 1.25rem; }
+
+.mr-2 {
+  margin-right: .5rem; }
+
+.mx-auto {
+  margin: 0 auto; }
+
+.h-full {
+  height: 100%; }
+
+.w-1\/2 {
+  width: 50%; }
+
+body {
+  background: #eceff4;
+  color: #434c5e;
+  font-family: 'Poppins', "Segoe UI", sans-serif;
+  margin: 0; }
+
+a {
+  cursor: pointer;
+  text-decoration: none; }
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer; }
+
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+  padding-left: 0; }
+
+.section.-hero {
+  background: #2e3440; }
+
+.section.-skills {
+  background: #e5e9f0;
+  padding: 3.8rem 0 0; }
+
+.section.-experience {
+  background: #2e3440; }
+
+.section.-projects {
+  background: #d8dee9; }
+
+.section.-contact {
+  padding-top: 2.5rem;
+  padding-bottom: 5rem; }
+
+.section__icon {
+  text-align: center; }
+
+.section__title {
+  font-size: 2.75rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 2rem 4rem;
+  text-align: center; }
+  .section__title.-intro {
+    padding: 3.5rem 0; }
+  .section__title.-skills {
+    padding: 2rem 0; }
+  .section__title.-experience {
+    color: #eceff4;
+    padding-top: 2rem; }
+  .section__title.-projects {
+    padding-top: 2rem; }
+  .section__title.-contact {
+    padding-bottom: 5rem; }
+
+.section__content {
+  padding: 0 5.25rem; }
+  .section__content.-skills {
+    background: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 5px 7px rgba(184, 194, 215, 0.1), 0 4px 4px rgba(184, 194, 215, 0.25);
+    margin: 0 1.5rem 3rem;
+    padding: 1.5rem 2rem; }
+  .section__content.-experience {
+    padding-top: 5rem; }
+
+.wave-divider {
+  display: block; }
+
+.hero__content {
+  color: #eceff4;
+  font-size: 1.75rem;
+  font-weight: 500;
+  padding: 10rem 3rem 0; }
+
+.hero__subtitle-highlight {
+  color: #8fbcbb;
+  margin: 0 .25rem; }
+
+.hero__cursor {
+  animation: blinking .9s infinite;
+  background: #eceff4;
+  display: inline-block;
+  height: 2rem;
+  width: 0.75rem; }
+
+@keyframes blinking {
+  0% {
+    background-color: #FFFFFF;
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.dev-icon-wrapper {
+  margin-bottom: 3.5rem; }
+
+.dev-icon {
+  border-radius: 50%;
+  max-width: 150px; }
+
+.skills-row {
+  align-items: flex-start;
+  display: flex; }
+
+.skills__group.-languages {
+  border-right: 1px solid #e5e9f0;
+  padding-bottom: 2.5rem;
+  width: 50%; }
+
+.skills__group.-frameworks, .skills__group.-tools {
+  padding-left: 2rem; }
+
+.skills__group.-tools {
+  border-left: 1px solid #e5e9f0; }
+
+.skills__group.-databases {
+  width: 50%; }
+
+.skills__groupName {
+  font-family: 'Montserrat', "Segoe UI", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.skills__list li {
+  color: #81a1c1;
+  font-weight: 500;
+  padding-left: 1rem; }
+
+.experience__item {
+  align-items: flex-start;
+  display: flex;
+  margin-bottom: 6rem; }
+
+.experience__icon-wrapper {
+  padding-right: 1rem; }
+
+.experience__role {
+  color: #ebcb8b;
+  font-size: 1.5rem;
+  font-weight: 600; }
+
+.experience__timePlace {
+  color: #d8dee9;
+  opacity: 60%; }
+
+.experience__techStack {
+  border-bottom: 1px solid #eceff4;
+  color: #88c0d0;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem; }
+
+.icon-tabler-point {
+  display: inline-block; }
+
+.experience__list {
+  color: #eceff4;
+  list-style-type: circle;
+  padding-left: 1rem; }
+
+.experience__seeMore {
+  align-items: center;
+  display: flex;
+  border: 1px solid #d8dee9;
+  border-radius: 4px;
+  padding: .3rem 1rem .3rem .5rem;
+  color: #88c0d0;
+  font-family: Poppins, "Segoe UI", sans-serif;
+  font-size: 1rem;
+  font-weight: 700; }
+  .experience__seeMore svg {
+    margin-right: .25rem; }
+
+.project-thumbnail {
+  text-align: center; }
+  .project-thumbnail img {
+    display: inline-block;
+    border-radius: 4px; }
+
+.project-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 2rem 0;
+  text-align: center; }
+
+.project-desc {
+  font-weight: 500; }
+  .project-desc a {
+    color: #5e81ac;
+    margin: 0; }
+
+.contact__email {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  line-height: 44px; }
+  .contact__email a {
+    color: #88c0d0; }

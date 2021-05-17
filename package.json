@@ -1,0 +1,23 @@
+{
+  "name": "camillevillnv.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch ./assets/scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camillevillnv/camillevillnv.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/camillevillnv/camillevillnv.github.io/issues"
+  },
+  "homepage": "https://github.com/camillevillnv/camillevillnv.github.io#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

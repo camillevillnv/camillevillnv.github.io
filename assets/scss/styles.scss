@@ -1,0 +1,271 @@
+@import "variables";
+@import "classes";
+@import "mixins";
+
+body {
+  background: $bgColor-primary;
+  color: $textColor-primary;
+  font-family: 'Poppins', "Segoe UI", sans-serif;
+  margin: 0;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+  padding-left: 0;
+}
+
+.section {
+  &.-hero {
+    background: $nord0;
+  }
+
+  &.-skills {
+    background: $nord5;
+    padding: 3.8rem 0 0;
+  }
+
+  &.-experience {
+    background: $nord0;
+  }
+
+  &.-projects {
+    background: $nord4;
+  }
+
+  &.-contact {
+    padding-top: 2.5rem;
+    padding-bottom: 5rem;
+  }
+}
+.section__icon {
+  text-align: center;
+
+}
+.section__title {
+  font-size: 2.75rem;
+  font-weight: 600;
+
+  margin: 0;
+  padding: 2rem 4rem;
+
+  text-align: center;
+
+  &.-intro {
+    padding: 3.5rem 0;
+  }
+
+  &.-skills {
+    padding: 2rem 0;
+  }
+
+  &.-experience {
+    color: $nord6;
+    padding-top: 2rem;
+  }
+
+  &.-projects {
+    padding-top: 2rem;
+  }
+
+  &.-contact {
+    padding-bottom: 5rem;
+  }
+}
+.section__content {
+  padding: 0 5.25rem;
+
+  &.-skills {
+    background: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 5px 7px rgba(184, 194, 215, 0.1), 0 4px 4px rgba(184, 194, 215, 0.25);
+    margin: 0 1.5rem 3rem;
+    padding: 1.5rem 2rem;
+  }
+
+  &.-experience {
+    padding-top: 5rem;
+  }
+}
+.wave-divider {
+  display: block;
+}
+
+.hero__content {
+  color: $nord6;
+  font-size: 1.75rem;
+  font-weight: 500;
+
+  padding: 10rem 3rem 0;
+}
+.hero__subtitle-highlight {
+  color: $nord7;
+  margin: 0 .25rem;
+}
+.hero__cursor {
+  animation: blinking .9s infinite;
+  background: $nord6;
+  display: inline-block;
+
+  height: 2rem;
+  width: 0.75rem;
+}
+
+@keyframes blinking {
+  0% {
+    background-color: #FFFFFF;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.dev-icon-wrapper {
+  margin-bottom: 3.5rem;
+}
+.dev-icon {
+  border-radius: 50%;
+  max-width: 150px;
+}
+
+
+.skills-row {
+  align-items: flex-start;
+  display: flex;
+}
+.skills__group {
+  &.-languages {
+    border-right: 1px solid $nord5;
+    padding-bottom: 2.5rem;
+    width: 50%;
+  }
+  &.-frameworks,
+  &.-tools {
+    padding-left: 2rem;
+  }
+
+  &.-tools {
+    border-left: 1px solid $nord5;
+  }
+  &.-databases {
+    width: 50%;
+  }
+}
+.skills__groupName {
+  font-family: 'Montserrat', "Segoe UI", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.skills__list {
+  li {
+    color: $nord9;
+    font-weight: 500;
+    padding-left: 1rem;
+  }
+}
+
+
+.experience__item {
+  align-items: flex-start;
+  display: flex;
+
+  margin-bottom: 6rem;
+}
+.experience__icon-wrapper {
+  padding-right: 1rem;
+}
+.experience__role {
+  color: $nord13;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.experience__timePlace {
+  color: $nord4;
+  opacity: 60%;
+}
+.experience__techStack {
+  border-bottom: 1px solid $nord6;
+  color: $nord8;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+}
+.icon-tabler-point {
+  display: inline-block;
+}
+.experience__list {
+  color: $nord6;
+  list-style-type: circle;
+
+  padding-left: 1rem;
+}
+.experience__seeMore {
+  align-items: center;
+  display: flex;
+
+  border: 1px solid $nord4;
+  border-radius: 4px;
+  padding: .3rem 1rem .3rem .5rem;
+
+  color: $nord8;
+  font-family: Poppins, "Segoe UI", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+
+  svg {
+    margin-right: .25rem;
+  }
+}
+
+.project-thumbnail {
+  text-align: center;
+
+  img {
+    display: inline-block;
+
+    border-radius: 4px;
+  }
+}
+.project-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+
+  margin: 2rem 0;
+  text-align: center;
+}
+.project-desc {
+  font-weight: 500;
+  a {
+    color: $nord10;
+    margin: 0;
+  }
+}
+
+.contact__email {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+
+  line-height: 44px;
+
+  a {
+    color: $nord8;
+  }
+}

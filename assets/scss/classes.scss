@@ -1,0 +1,59 @@
+.font-bold {
+  font-weight: 700;
+}
+.font-semibold {
+  font-weight: 600;
+}
+
+.textColor-brown {
+  color: #BA4706;
+}
+
+.textColor-primary {
+  color: $textColor-primary;
+}
+.textColor-nord12 {
+  color: $nord12;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+
+.flex {
+  display: flex;
+}
+.flex-1 {
+  flex: 1 1 0;
+}
+.flex-col {
+  flex-direction: column;
+}
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+.mr-2 {
+  margin-right: .5rem;
+}
+.mx-auto {
+  margin: 0 auto;
+}
+
+.h-full {
+  height: 100%;
+}
+.w-1\/2 {
+  width: 50%;
+}
+
