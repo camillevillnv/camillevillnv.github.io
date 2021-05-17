@@ -127,6 +127,8 @@ ul {
   user-select: none; }
   .wave-divider.-intro {
     margin-top: -1px; }
+  .wave-divider.-skills, .wave-divider.-experience, .wave-divider.-projects, .wave-divider.-contact {
+    margin-bottom: -1px; }
 
 .hero__content {
   color: #eceff4;
