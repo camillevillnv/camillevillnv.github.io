@@ -125,6 +125,8 @@ ul {
   background-color: transparent;
   pointer-events: none;
   user-select: none; }
+  .wave-divider.-intro {
+    margin-top: -1px; }
 
 .hero__content {
   color: #eceff4;

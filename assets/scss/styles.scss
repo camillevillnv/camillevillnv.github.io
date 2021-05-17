@@ -111,6 +111,10 @@ ul {
   background-color: transparent;
   pointer-events: none;
   user-select: none;
+
+  &.-intro {
+    margin-top: -1px;
+  }
 }
 
 .hero__content {
