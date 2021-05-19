@@ -122,12 +122,12 @@ ul {
     @include tablet-portrait-up {
       max-width: 50%;
       margin: 0 auto;
-      padding: 1.5rem 3rem;
+      padding: 1.5rem 3rem 2rem;
     }
 
     @include desktop-up {
       max-width: 45%;
-      padding: 2.5rem 5rem;
+      padding: 2.5rem 5rem 4rem;
     }
   }
 
@@ -302,6 +302,10 @@ ul {
   display: flex;
 
   margin-bottom: 6rem;
+
+  &.-dri {
+    margin-bottom: 3rem;
+  }
 }
 .experience__icon-wrapper {
   padding-right: 1rem;
@@ -349,6 +353,50 @@ ul {
 
   @include desktop-up {
     font-size: 1.25rem;
+  }
+}
+.experience__websites-list {
+  list-style-type: circle;
+  padding-left: 1rem;
+}
+.experience__websitesIntro {
+  color: $nord6;
+}
+
+.experience__websites {
+  @include desktop-up {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+.experience__websiteThumbTile {
+  margin-bottom: 2rem;
+  position: relative;
+  text-align: center;
+
+  &:hover {
+    z-index: 10;
+  }
+}
+.experience__websiteThumb {
+  border-radius: 5px;
+  display: inline-block;
+  width: 100%;
+
+  transition: 200ms ease-in;
+
+  &:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+  }
+
+  @include desktop-up {
+    width: 90%;
+
+    &:hover {
+      transform: scale(1.25);
+    }
   }
 }
 .experience__seeMore {
