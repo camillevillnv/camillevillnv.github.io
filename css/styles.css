@@ -368,9 +368,12 @@ ul {
   text-align: center; }
   .project-thumbnail img {
     display: inline-block;
-    max-width: 500px;
+    max-width: 75%;
     border-radius: 4px;
     box-shadow: 0 5px 7px rgba(184, 194, 215, 0.1), 0 4px 4px rgba(184, 194, 215, 0.25); }
+    @media (min-width: 900px) {
+      .project-thumbnail img {
+        max-width: 450px; } }
 
 .project-title {
   font-size: 1.75rem;
